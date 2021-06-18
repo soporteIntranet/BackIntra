@@ -29,12 +29,12 @@ app.use(morgan('dev'))
 app.set('trust proxy', true);
 
 
-// Cors
-app.use(function(req, res, next) {
-    res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-    next();
-});
+// // Cors
+// app.use(function(req, res, next) {
+//     res.header('Access-Control-Allow-Origin', '*');
+//     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+//     next();
+// });
 
 // Habilitar cors (DE MANERA LIMITADA)
 const whitelist = ['IP'];
